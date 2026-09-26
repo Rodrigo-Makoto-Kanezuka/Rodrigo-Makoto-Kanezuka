@@ -48,7 +48,7 @@ Organização criada para reunir meus projetos em um só lugar — Jogo inspirad
 ## Estatísticas
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Rodrigo-Makoto-Kanezuka&show_icons=true&theme=dark&hide_border=true&title_color=FF0000&icon_color=FF0000&text_color=ffffff&bg_color=0D0D0D" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Rodrigo-Makoto-Kanezuka&show_icons=true&theme=dark&hide_border=true&title_color=FF0000&icon_color=FF0000&text_color=ffffff&bg_color=0D0D0D" />
 </div>
 
 <br>
