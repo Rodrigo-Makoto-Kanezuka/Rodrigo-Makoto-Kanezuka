@@ -1,1 +1,27 @@
 
+name: Update Stats
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # roda todo dia às 06:00 UTC
+  workflow_dispatch:        # permite rodar manualmente pelo botão
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Baixar SVG de estatísticas
+        run: |
+          curl -s "https://github-readme-stats.vercel.app/api?username=Rodrigo-Makoto-Kanezuka&show_icons=true&theme=dark&hide_border=true&title_color=FF0000&icon_color=FF0000&text_color=ffffff&bg_color=0D0D0D" -o stats.svg
+
+      - name: Commitar se tiver mudança
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats.svg
+          git diff --staged --quiet || (git commit -m "Atualiza stats.svg" && git push)
