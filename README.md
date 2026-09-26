@@ -12,9 +12,14 @@
 
 <br>
 
-- Estudante de Técnico em Desenvolvimento de Sistemas no **IFSP**
+<img align="right" width="320" height="180" alt="ilustração" src="https://github.com/user-attachments/assets/a49a90a6-361c-4ab9-abd2-e931fdd8d8f5" />
 
-<br>
+- Estudante de Técnico em Desenvolvimento de Sistemas no **IFSP**
+- Gosto de Matemática
+- Procuro aprender cada vez mais
+
+<br clear="right">
+
 
 ## Conhecimentos Básicos
 
