@@ -1,10 +1,9 @@
-
 name: Update Stats
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # roda todo dia às 06:00 UTC
-  workflow_dispatch:        # permite rodar manualmente pelo botão
+    - cron: "0 6 * * *"
+  workflow_dispatch:
 
 jobs:
   update-stats:
@@ -15,11 +14,10 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Baixar SVG de estatísticas
-        run: |
-          curl -s "https://github-readme-stats.vercel.app/api?username=Rodrigo-Makoto-Kanezuka&show_icons=true&theme=dark&hide_border=true&title_color=FF0000&icon_color=FF0000&text_color=ffffff&bg_color=0D0D0D" -o stats.svg
+      - name: Baixar SVG de estatisticas
+        run: curl -s "https://github-readme-stats.vercel.app/api?username=Rodrigo-Makoto-Kanezuka&show_icons=true&theme=dark&hide_border=true&title_color=FF0000&icon_color=FF0000&text_color=ffffff&bg_color=0D0D0D" -o stats.svg
 
-      - name: Commitar se tiver mudança
+      - name: Commitar se tiver mudanca
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
